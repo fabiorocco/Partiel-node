@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/socksdb', {
+mongoose.connect('mongodb://localhost:27017/bikesdb', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false
@@ -10,4 +10,4 @@ mongoose.connect('mongodb://localhost:27017/socksdb', {
   console.error(`Error while connecting to DB : ${err}`);
 })
 
-// module.exports.Sock = require('./sock');
+module.exports.Bike = require('./bike');
